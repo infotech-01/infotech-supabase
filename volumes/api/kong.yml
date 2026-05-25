@@ -375,11 +375,12 @@ services:
         paths:
           - /mcp
     plugins:
-      # Block access to /mcp by default
-      - name: request-termination
-        config:
-          status_code: 403
-          message: "Access is forbidden."
+      # OPENED for external access (Infotech): MCP server enforces OAuth downstream
+      # Original block (request-termination) commented out 2026-05-26
+      #- name: request-termination
+      #  config:
+      #    status_code: 403
+      #    message: "Access is forbidden."
       # Enable local access (danger zone!)
       # 1. Comment out the 'request-termination' section above
       # 2. Uncomment the entire section below, including 'deny'
