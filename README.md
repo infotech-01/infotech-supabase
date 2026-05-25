@@ -12,7 +12,7 @@ Dokploy raw-compose deploys ресетят `code/` dir на каждый redeplo
 
 Create Application → Compose:
 - **Source:** Git Public Repository
-- **Repository URL:** `https://github.com/sternmeisterde-ui/infotech-supabase`
+- **Repository URL:** `https://github.com/infotech-01/infotech-supabase`
 - **Branch:** `main`
 - **Compose Path:** `docker-compose.yml`
 - Env vars: см. `/Users/user/infotech/secrets/supabase-env.txt` в проекте Инфотех
